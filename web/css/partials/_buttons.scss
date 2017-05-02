@@ -1,0 +1,39 @@
+.btn-warning {
+  background-color: $btn-color-lime;
+  border-color: transparent;
+  color: $dark-grey;
+
+  &:hover, &:active, &:focus, &:active:focus {
+    color: $dark-grey;
+    border-color: transparent;
+    background-color: $btn-color-lime-hover;
+  }
+}
+
+.btn-success {
+  background-color: $btn-color-success;
+  border-color: transparent;
+
+  &:hover, &:active, &:focus {
+    background-color: $btn-color-success-hover;
+    border-color: transparent;
+  }
+}
+.btn-primary {
+  background-color: $btn-color-info;
+  border-color: transparent;
+
+  &:hover, &:active, &:focus {
+    background-color: $btn-color-info-hover;
+    border-color: transparent;
+  }
+}
+.btn-danger {
+  background-color: $btn-color-danger;
+  border-color: transparent;
+
+  &:hover, &:active, &:focus {
+    background-color: $btn-color-danger-hover;
+    border-color: transparent;
+  }
+}

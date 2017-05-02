@@ -38,14 +38,15 @@ AppAsset::register($this);
                 ],
             ]);
 
-            $menuItems = [
+            $searchForm =
                 '<form id="searchbox_006237035567373325440:lmymu4nwvsa" action="http://www.google.com/search" class="navbar-form navbar-left">
                     <fieldset class="form-group">
                         <input id="search_input" name="q" type="text" size="20" maxlength="256" class="form-control" placeholder="Search for...">
                         <input type="hidden" name="cx" value="006237035567373325440:lmymu4nwvsa">
                         <input type="hidden" name="cof" value="FORID:0">
                     </fieldset>
-                </form>',
+                </form>';
+            $menuItems = [
                 ['label' => 'RSS', 'url' => ['/news/rss']],
             ];
             if (Yii::$app->user->isGuest) {
@@ -55,6 +56,7 @@ AppAsset::register($this);
                 $menuItems[] = ['label' => 'Comments', 'url' => ['/comment/index'], 'visible'=> \Yii::$app->user->can('adminNews')];
                 $menuItems[] = ['label' => 'News admin', 'url' => ['/news/admin', 'status' => News::STATUS_PROPOSED], 'visible'=> \Yii::$app->user->can('adminNews')];
                 $menuItems[] = ['label' => 'User admin', 'url' => ['/user/index'], 'visible'=> UserPermissions::canAdminUsers()];
+                $menuItems[] = $searchForm;
                 $menuItems[] = ['label' => Yii::$app->user->identity->username, 'url' => ['/user/view', 'id' => \Yii::$app->user->id]];
                 $menuItems[] = [
                     'label' => 'Logout',
@@ -64,7 +66,7 @@ AppAsset::register($this);
             }
             ?>
 
-            <?= yii\helpers\Html::a(Yii::t('news', 'Suggest news'), ['news/suggest'], ['class' => 'btn btn-success navbar-btn']) ?>
+            <?= yii\helpers\Html::a(Yii::t('news', 'Suggest news'), ['news/suggest'], ['class' => 'btn btn-warning navbar-btn text-bold']) ?>
 
             <?php
             echo Nav::widget([
