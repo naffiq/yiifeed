@@ -2,13 +2,13 @@
 
 namespace app\controllers;
 
+use app\controllers\base\Controller;
 use app\components\UserPermissions;
 use Yii;
 use app\models\User;
 use app\models\News;
 use yii\authclient\Collection;
 use yii\data\ActiveDataProvider;
-use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;

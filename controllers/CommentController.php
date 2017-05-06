@@ -1,11 +1,11 @@
 <?php
 namespace app\controllers;
 
+use app\controllers\base\Controller;
 use app\components\UserPermissions;
 use app\models\Comment;
 use yii\data\ActiveDataProvider;
 use yii\filters\AccessControl;
-use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 
 /**

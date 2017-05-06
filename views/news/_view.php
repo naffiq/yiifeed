@@ -33,7 +33,6 @@ $this->registerMetaTag(['property' => 'og:url', 'content' => Url::canonical()]);
 <div class="row">
     <div class="col-md-2 col-sm-3 post-meta">
         <p class="time">
-            <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
             <?= Yii::$app->formatter->asDate($model->created_at) ?>
         </p>
         <?php if ($displayUser && $model->user_id): ?>
@@ -60,9 +59,9 @@ $this->registerMetaTag(['property' => 'og:url', 'content' => Url::canonical()]);
         <?php endif ?>
     </div>
     <div class="col-sm-9 col-md-10 post">
-        <h1>
+        <h3>
             <?= $isFull ? Html::encode($model->title) : Html::a(Html::encode($model->title), ['news/view', 'id' => $model->id]) ?>
-        </h1>
+        </h3>
 
         <div class="content">
             <?= HtmlPurifier::process(Markdown::process($model->text, 'gfm'), [

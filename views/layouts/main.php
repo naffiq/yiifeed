@@ -5,9 +5,9 @@ use app\widgets\Alert;
 use yii\helpers\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
-use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
 use app\models\News;
+use app\widgets\Header;
 
 /* @var $this \yii\web\View */
 /* @var $content string */
@@ -75,11 +75,8 @@ AppAsset::register($this);
             ]);
             NavBar::end();
         ?>
-
+        <?= Header::widget() ?>
         <div class="container">
-            <?= Breadcrumbs::widget([
-                'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-            ]) ?>
             <?= Alert::widget() ?>
             <?= $content ?>
         </div>

@@ -1,6 +1,8 @@
 <?php
 
 namespace app\controllers;
+
+use app\controllers\base\Controller;
 use app\components\feed\Feed;
 use app\components\feed\Item;
 use app\components\UserPermissions;
@@ -14,7 +16,6 @@ use yii\helpers\Html;
 use yii\helpers\HtmlPurifier;
 use yii\helpers\Markdown;
 use yii\helpers\Url;
-use yii\web\Controller;
 use yii\data\ActiveDataProvider;
 use yii\filters\AccessControl;
 use yii\web\ForbiddenHttpException;

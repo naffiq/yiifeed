@@ -2,6 +2,7 @@
 
 namespace app\controllers;
 
+use app\controllers\base\Controller;
 use app\components\AuthHandler;
 use app\models\PasswordResetRequestForm;
 use app\models\ResetPasswordForm;
@@ -11,7 +12,6 @@ use yii\authclient\ClientInterface;
 use yii\base\InvalidParamException;
 use yii\filters\AccessControl;
 use yii\web\BadRequestHttpException;
-use yii\web\Controller;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 

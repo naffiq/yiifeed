@@ -6,6 +6,12 @@ body {
   font-family: 'Roboto', Arial, Helvetica;
 }
 
+.background-grey {
+  background: $light-grey;
+}
+.container-header {
+}
+
 a, a:hover {
   color: #1d7aa2;
 }
@@ -15,10 +21,22 @@ a, a:hover {
   height: auto;
   margin: 0 auto -60px;
   padding: 0 0 60px;
+
+  & > .page-header {
+    margin-top: 66px;
+    padding-bottom: 0;
+    border-bottom: none;
+
+    h1 {
+      font-size: 22px;
+      margin: 19px 0;
+      font-weight: bold;
+    }
+  }
 }
 
 .wrap > .container {
-  padding: 70px 15px 20px;
+  padding: 20px 15px;
 }
 
 .footer {
