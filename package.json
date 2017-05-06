@@ -1,0 +1,25 @@
+{
+  "name": "yiifeed",
+  "version": "1.0.0",
+  "description": "yiifeed",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.5.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "node_modules/.bin/node-sass -w web/css/site.scss web/css/site.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naffiq/yiifeed.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/naffiq/yiifeed/issues"
+  },
+  "homepage": "https://github.com/naffiq/yiifeed#readme"
+}
