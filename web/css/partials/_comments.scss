@@ -1,0 +1,17 @@
+.comments {
+  list-style: none;
+  padding: 0;
+
+  .date { color: #ccc; }
+
+  li {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #eee;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}

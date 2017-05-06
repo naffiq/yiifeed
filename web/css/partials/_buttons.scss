@@ -1,3 +1,11 @@
+.btn {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+
+  box-shadow:0 2px 1px 0 rgba(89,89,89,0.50);
+}
+
 .btn-warning {
   background-color: $btn-color-lime;
   border-color: transparent;
@@ -9,12 +17,11 @@
     background-color: $btn-color-lime-hover;
   }
 }
-
 .btn-success {
   background-color: $btn-color-success;
   border-color: transparent;
 
-  &:hover, &:active, &:focus {
+  &:hover, &:active, &:focus, &:active:focus {
     background-color: $btn-color-success-hover;
     border-color: transparent;
   }
@@ -23,7 +30,7 @@
   background-color: $btn-color-info;
   border-color: transparent;
 
-  &:hover, &:active, &:focus {
+  &:hover, &:active, &:focus, &:active:focus {
     background-color: $btn-color-info-hover;
     border-color: transparent;
   }
@@ -32,7 +39,7 @@
   background-color: $btn-color-danger;
   border-color: transparent;
 
-  &:hover, &:active, &:focus {
+  &:hover, &:active, &:focus, &:active:focus {
     background-color: $btn-color-danger-hover;
     border-color: transparent;
   }

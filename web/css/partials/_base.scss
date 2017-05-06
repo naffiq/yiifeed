@@ -1,14 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&subset=cyrillic');
+
 html,
 body {
   height: 100%;
-}
-
-.btn {
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-
-  box-shadow:0 2px 1px 0 rgba(89,89,89,0.50);
+  font-family: 'Roboto', Arial, Helvetica;
 }
 
 a, a:hover {
@@ -117,7 +112,6 @@ a.desc:after {
 .post, .page {
   color: #555;
 
-  //font-family: 'Merriweather', Georgia, 'Times New Roman', Times, serif;
   line-height: 1.5;
   font-size: 120%;
 
@@ -127,7 +121,6 @@ a.desc:after {
 }
 
 .post-meta, .page-meta {
-  //font-family: 'Merriweather', Georgia, 'Times New Roman', Times, serif;
   font-size: 120%;
 
   margin-top: 30px;
@@ -144,26 +137,6 @@ a.desc:after {
   vertical-align: baseline !important;
 }
 
-.comments {
-  list-style: none;
-  padding: 0;
-}
-
-.comments li {
-  padding-top: 1em;
-  padding-bottom: 1em;
-  margin-bottom: 1em;
-  border-bottom: 1px solid #eee;
-}
-
-.comments li:last-child {
-  border-bottom: none;
-}
-
-.comments .date {
-  color: #ccc;
-}
-
 .post-meta .author img {
   margin-right: .3em;
   border-radius: 0.3em;
@@ -171,10 +144,6 @@ a.desc:after {
 
 .post-meta .author a:hover {
   text-decoration: none;
-}
-
-.navbar-form {
-  margin: 8px 0;
 }
 
 .user-view-avatar {

@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&subset=cyrillic");
+.btn {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  box-shadow: 0 2px 1px 0 rgba(89, 89, 89, 0.5); }
+
 .btn-warning {
   background-color: #f5ffc1;
   border-color: transparent;
@@ -10,33 +17,28 @@
 .btn-success {
   background-color: #66c2b2;
   border-color: transparent; }
-  .btn-success:hover, .btn-success:active, .btn-success:focus {
+  .btn-success:hover, .btn-success:active, .btn-success:focus, .btn-success:active:focus {
     background-color: #4aad9c;
     border-color: transparent; }
 
 .btn-primary {
   background-color: #1d7aa2;
   border-color: transparent; }
-  .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+  .btn-primary:hover, .btn-primary:active, .btn-primary:focus, .btn-primary:active:focus {
     background-color: #10698f;
     border-color: transparent; }
 
 .btn-danger {
   background-color: #ee706c;
   border-color: transparent; }
-  .btn-danger:hover, .btn-danger:active, .btn-danger:focus {
+  .btn-danger:hover, .btn-danger:active, .btn-danger:focus, .btn-danger:active:focus {
     background-color: #db534f;
     border-color: transparent; }
 
 html,
 body {
-  height: 100%; }
-
-.btn {
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  box-shadow: 0 2px 1px 0 rgba(89, 89, 89, 0.5); }
+  height: 100%;
+  font-family: 'Roboto', Arial, Helvetica; }
 
 a, a:hover {
   color: #1d7aa2; }
@@ -140,31 +142,12 @@ a.desc:after {
 .fb-share-button.fb_iframe_widget > span {
   vertical-align: baseline !important; }
 
-.comments {
-  list-style: none;
-  padding: 0; }
-
-.comments li {
-  padding-top: 1em;
-  padding-bottom: 1em;
-  margin-bottom: 1em;
-  border-bottom: 1px solid #eee; }
-
-.comments li:last-child {
-  border-bottom: none; }
-
-.comments .date {
-  color: #ccc; }
-
 .post-meta .author img {
   margin-right: .3em;
   border-radius: 0.3em; }
 
 .post-meta .author a:hover {
   text-decoration: none; }
-
-.navbar-form {
-  margin: 8px 0; }
 
 .user-view-avatar {
   float: left;
@@ -210,9 +193,19 @@ a.desc:after {
 @media (min-width: 768px) {
   .navbar {
     height: 66px; }
-
   .navbar-nav > li > a {
     padding-top: 23px;
     padding-bottom: 23px; } }
 
-/*# sourceMappingURL=site.css.map */
+.comments {
+  list-style: none;
+  padding: 0; }
+  .comments .date {
+    color: #ccc; }
+  .comments li {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #eee; }
+    .comments li:last-child {
+      border-bottom: none; }
